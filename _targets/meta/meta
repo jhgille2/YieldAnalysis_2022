@@ -1,0 +1,5 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
+make_plan_flowcharts|function|f36716b7a96e702d||||||||||||||
+Plan|stem|c5d964c7abf6282d|7ab92948f8354918|4745aa592080ea1d|2093776791|docs/Plan.html*docs/Plan.Rmd|t18866.6235830455s|15b1715540cb905d|749676|file|vector|||2.86||
+Writeup|stem|bc2b255e6602b7d5|bace05258d54e58b|4745aa592080ea1d|-2019501384|docs/Writeup.html*docs/Writeup.Rmd|t18866.6235915409s|bafb7a40c97065f5|753627|file|vector|||0.65||
+Plan_Flowcharts|stem|825a16277ad3a8b1|a76456c067bbe4ce|c87b4047a04165b8|-583674500||t18866.6235924787s|10da61cba4cac40f|44|rds|vector|||0||
