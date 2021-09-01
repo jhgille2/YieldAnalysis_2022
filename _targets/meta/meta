@@ -1,5 +1,9 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
-make_plan_flowcharts|function|f36716b7a96e702d||||||||||||||
-Plan|stem|c5d964c7abf6282d|7ab92948f8354918|4745aa592080ea1d|2093776791|docs/Plan.html*docs/Plan.Rmd|t18866.6235830455s|15b1715540cb905d|749676|file|vector|||2.86||
 Writeup|stem|bc2b255e6602b7d5|bace05258d54e58b|4745aa592080ea1d|-2019501384|docs/Writeup.html*docs/Writeup.Rmd|t18866.6235915409s|bafb7a40c97065f5|753627|file|vector|||0.65||
 Plan_Flowcharts|stem|825a16277ad3a8b1|a76456c067bbe4ce|c87b4047a04165b8|-583674500||t18866.6235924787s|10da61cba4cac40f|44|rds|vector|||0||
+merge_2020_data|function|386fc88497183264||||||||||||||
+make_plan_flowcharts|function|7f751aef04cd03cd||||||||||||||
+Plan|stem|de947c7ee398fa63|7ab92948f8354918|4745aa592080ea1d|2093776791|docs/Plan.html*docs/Plan.Rmd|t18871.9537387272s|2e7c59bae700fef6|750663|file|vector|||2.92||
+YieldFile_2020|stem|6a85aca1b7fc7885|9c7223dd674ff580|4e3739ef91745af0|-1962430341||t18871.9537398557s|5c82a6b436969051|120|rds|vector|||0||
+NIRFile_2020|stem|72256805d06e148a|e3dcacf09460abf3|4e3739ef91745af0|1595074853||t18871.9537403071s|383bd5e2f277cce6|122|rds|vector|||0.03||
+Yield2020|stem|2b7599f9523f1846|2c0ef327c9869597|eddd92e7d7fb5073|-262790981||t18871.9537428423s|0ed3c1b85538aed9|8445|rds|vector|||0.2||

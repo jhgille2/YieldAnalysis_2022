@@ -1,6 +1,6 @@
 ---
-title: "Untitled Draft"
-author: "Report Author"
+title: "Work plan"
+author: "Jay Gillenwater"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: html_document
 ---
@@ -28,13 +28,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 The main goal for this repository is to adapt and update the workflow I used to analyze the 2020/2019 data from the "Jay" yield trials so that we can be ready when the data from 2021 comes in. 
 
-There's a couple reasons why I want to somewhat re-write the [existing ](https://github.com/jhgille2/JayYield2021) instead of just adding to it. One reason is that I used the [drake](https://github.com/ropensci/drake) package to control the older workflow, but I want to use the newer [targets](https://github.com/ropensci/targets) package to control this one. The second reason is just that there is some bad code in the old analysis that I think I can improve on and just make a better workflow in general that still goes through the same basic steps. 
+There's a couple reasons why I want to somewhat re-write the [existing workflow ](https://github.com/jhgille2/JayYield2021) instead of just adding to it. One reason is that I used the [drake](https://github.com/ropensci/drake) package to control the older workflow, but I want to use the newer [targets](https://github.com/ropensci/targets) package to control this one. The second reason is just that there is some bad code in the old analysis that I think I can improve on and just make a better workflow in general that still goes through the same basic steps. 
 
 ## The old workflow
 
 Before I go about changing the existing workflow, I want to go back and get a better idea of the steps involved in it since It's been a while since I worked on it. I feel like this will let me get a better handle on exactly what should be changed to accommodate the new data, and to improve the workflow in general. The existing workflow does the following steps in order:  
 
-1. Read in 2019 yield + protein/oil data, read in 202 yield data and the 202 NIR protein/oil data which were in separate files. 
+1. Read in 2019 yield + protein/oil data, read in 2020 yield data and the 2020 NIR protein/oil data which were in separate files. 
 2. Merge the 2020 yield with the 2020 NIR data. 
 3. Do come cleaning on the 2019 and 2020 data so that we only have the columns we want and their column names match. 
 4. Combine the 2019 data with the 2020 data into one, large data set. 
@@ -46,11 +46,13 @@ Before I go about changing the existing workflow, I want to go back and get a be
 
 ## Adapting the workflow to new data
 
-At first glance, an easy solution would be to just add a bit to step 1 where the data from 2021 is also read in and merged with the 2019/2020 data. This may technically work as it looks like the downstream steps are largely agnostic to the specifics of the data (e.g. splitting columns based on year in general, but not specif hard-coded years). One problem though is that the entries this year were grown in four row plots while in the last couple years they were grown in three row plots. There may be a way to simply convert the four row data to three row data (like divide the yield by 2?) I'll have to look into what the best way to do that is though. Another option would be to instead focus on the ranking of the genotypes for each phenotype. 
+At first glance, an easy solution would be to just add a bit to step 1 of the old workflow where the data from 2021 is also read in and merged with the 2019/2020 data. This may technically work as it looks like the downstream steps are largely agnostic to the specifics of the data (e.g. splitting columns based on year in general, but not specif hard-coded years). One problem though is that the entries this year were grown in four row plots while in the last couple years they were grown in three row plots. There may be a way to simply convert the four row data to three row data (like divide the yield by 2?) I'll have to look into what the best way to do that is though. Another option would be to instead focus on the ranking of the genotypes for each phenotype. 
 
-It would be nice to find a way to standardize the three-row vs four row data though. The old workflow is set up to use functions from the [metan](https://github.com/TiagoOlivoto/metan) package which tend to expect all the data for the experiment to be in one dataframe where measurement techniques are consistent across years. 
+It would be nice to find a way to standardize the three-row vs four row data and combine it all into one big data set though. The old workflow is set up to use functions from the [metan](https://github.com/TiagoOlivoto/metan) package which tend to expect all the data for the experiment to be in one dataframe where measurement techniques are consistent across years. 
 
 Although I don't have the 2021 data yet, I know what it's general structure will be as the design this year is the same as last years. From this, I think a good approach would be to simulate a set of data with the [faux](https://debruine.github.io/faux/articles/sim_df.html) package and use this simulated data to develop the workflow before I have the actual data in hand. 
+
+For the sake of preparedness for now, I want to prepare steps in the workflow that will both handle "standardized" data (three-row yield to four row or vice versa), and one that analyzes the data separately and focuses on evaluating the ranking of genotypes across seasons. 
 
 
 

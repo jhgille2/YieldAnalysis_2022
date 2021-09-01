@@ -10,5 +10,9 @@ pacman::p_load(conflicted,
                tarchetypes, 
                tidyverse, 
                DiagrammeR, 
-               rmarkdown)
+               rmarkdown, 
+               lme4, 
+               broom.mixed, 
+               faux, 
+               here)
 

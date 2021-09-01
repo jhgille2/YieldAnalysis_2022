@@ -1,7 +1,9 @@
 name|type|parent|branches|progress
 Plan|stem|Plan|0|started
 Plan|stem|Plan|0|built
-Writeup|stem|Writeup|0|started
-Writeup|stem|Writeup|0|built
-Plan_Flowcharts|stem|Plan_Flowcharts|0|started
-Plan_Flowcharts|stem|Plan_Flowcharts|0|built
+YieldFile_2020|stem|YieldFile_2020|0|started
+YieldFile_2020|stem|YieldFile_2020|0|built
+NIRFile_2020|stem|NIRFile_2020|0|started
+NIRFile_2020|stem|NIRFile_2020|0|built
+Yield2020|stem|Yield2020|0|started
+Yield2020|stem|Yield2020|0|built
