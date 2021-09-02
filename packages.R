@@ -14,5 +14,20 @@ pacman::p_load(conflicted,
                lme4, 
                broom.mixed, 
                faux, 
-               here)
+               here, 
+               janitor, 
+               ggcorrplot, 
+               patchwork,
+               gt, 
+               ggthemes, 
+               tufte, 
+               kableExtra, 
+               ggrepel, 
+               hrbrthemes, 
+               emmeans, 
+               metan, 
+               bookdown)
+
+
+
 

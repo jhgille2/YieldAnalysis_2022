@@ -1,9 +1,32 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
 Writeup|stem|bc2b255e6602b7d5|bace05258d54e58b|4745aa592080ea1d|-2019501384|docs/Writeup.html*docs/Writeup.Rmd|t18866.6235915409s|bafb7a40c97065f5|753627|file|vector|||0.65||
 Plan_Flowcharts|stem|825a16277ad3a8b1|a76456c067bbe4ce|c87b4047a04165b8|-583674500||t18866.6235924787s|10da61cba4cac40f|44|rds|vector|||0||
-merge_2020_data|function|386fc88497183264||||||||||||||
-make_plan_flowcharts|function|7f751aef04cd03cd||||||||||||||
 Plan|stem|de947c7ee398fa63|7ab92948f8354918|4745aa592080ea1d|2093776791|docs/Plan.html*docs/Plan.Rmd|t18871.9537387272s|2e7c59bae700fef6|750663|file|vector|||2.92||
-YieldFile_2020|stem|6a85aca1b7fc7885|9c7223dd674ff580|4e3739ef91745af0|-1962430341||t18871.9537398557s|5c82a6b436969051|120|rds|vector|||0||
-NIRFile_2020|stem|72256805d06e148a|e3dcacf09460abf3|4e3739ef91745af0|1595074853||t18871.9537403071s|383bd5e2f277cce6|122|rds|vector|||0.03||
-Yield2020|stem|2b7599f9523f1846|2c0ef327c9869597|eddd92e7d7fb5073|-262790981||t18871.9537428423s|0ed3c1b85538aed9|8445|rds|vector|||0.2||
+YieldFile_2019|stem|fb07844811572d0b|f7772e84339c00de|4e3739ef91745af0|1972527973|C:/Users/Jay/Desktop/Documents/R/YieldAnalysis_2022/data/YieldData_2019.csv|t18674.6231039378s|eebb680c8f839d2e|108581|file|vector|||0||
+ExploratoryAnalysis|stem|c128a1066ffe9e8a|e426b8ae2afa23e4|5367b5ca45c64c57|-1723169927||t18872.8524465198s|5c25e0113a51f576|771468|rds|vector|||2.06|Rows  with NA values deleted.|
+fit_GYTModel|function|114c79c6659a9736||||||||||||||
+Balance_YieldData|function|8d432c51db89a54a||||||||||||||
+fit_MixedModels|function|028dbbe51615412d||||||||||||||
+merge_2020_data|function|386fc88497183264||||||||||||||
+fit_GGEModels|function|bd5e5afaedcb6bef||||||||||||||
+plot_GGEModels|function|8dfebe8a42b91795||||||||||||||
+calc_MTSI|function|74be46c2244f7848||||||||||||||
+merge_2021_data|function|651d3ae59b410590||||||||||||||
+plot_BLUPs|function|5147f3f6852699c2||||||||||||||
+make_plan_flowcharts|function|7f751aef04cd03cd||||||||||||||
+simulate_yield_2021|function|59252a7dcf4d3bec||||||||||||||
+explore_BalancedData|function|42adede6399da28e||||||||||||||
+read_YieldData|function|1f6b7d18e3cb0990||||||||||||||
+YieldFile_2020|stem|442c2082661ac4e7|9c7223dd674ff580|4e3739ef91745af0|-1962430341|C:/Users/Jay/Desktop/Documents/R/YieldAnalysis_2022/data/YieldData_2020.csv|t18674.6220642933s|424be012b846c1a3|30213|file|vector|||0.01||
+NIRFile_2020|stem|7646956b28172159|e3dcacf09460abf3|4e3739ef91745af0|1595074853|C:/Users/Jay/Desktop/Documents/R/YieldAnalysis_2022/data/NIRData_2020.csv|t18667.7263129618s|33c09d7d9ec42dd3|15355|file|vector|||0||
+YieldData|stem|767b2b8eb56cf734|723dc9faf97e9f8a|9c629380c3ba2d6d|-510305307||t18872.7965936057s|579e149d862ba499|37427|rds|vector|||0.59||
+Yield2020|stem|2b7599f9523f1846|2c0ef327c9869597|96ef4c05fcbf8d32|-262790981||t18872.7965949594s|0ed3c1b85538aed9|8445|rds|vector|||0.08||
+BalancedData|stem|3d72c485587711a9|695b64754556cd0e|1ed32c225bfa3886|-1402690927||t18872.7965995659s|307c20fc42c34fd4|9746|rds|vector|||0.36||
+Yield2021|stem|af548b10ccb3c7ed|5411b9094d1f3b3a|7bb053bf3ea1dce7|-836051875||t18872.8524192818s|f215fa194be5e1d5|13238|rds|vector|||0.04||
+Merged2021|stem|7b0f8033d15b4f8d|a45d6c5a9a7250d0|913c90342626c927|1817469584||t18872.8524199994s|e17549ca8f4b31fe|22307|rds|vector|||0.04||
+GGEModels|stem|0d88ee930c3d1aad|9e3b24ca78c0d737|5da42f08cb43666f|-1479288753||t18872.8531122281s|25947889dfdd16c7|4364|rds|vector|||0.28||
+GYTModel|stem|ae23287612502309|2d15b8f2d7c2271f|695658f8017ac871|-4571460||t18872.8531146124s|d376244e2daf8956|24234|rds|vector|||0.18|Rows 90, 189, 192, 195, 198, 201, 204, 207, 210, 213, 216, 219, 222, 225, 272, 347, 377, 389, 396 with NA values deleted.|
+MTSI_Plots|stem|5af3627e2163c096|97bc902c52f8ea7d|95faed456a630d73|1608516244||t18872.8534222762s|bb29cd039d727909|2180156|rds|vector|||26.2|Rows 90, 189, 192, 195, 198, 201, 204, 207, 210, 213, 216, 219, 222, 225, 377, 389, 396 with NA values deleted.|
+MixedModels|stem|49dba7fe7040f24d|d8f97d5d80d39660|8944de5190176614|-1467284508||t18872.8535163056s|664c345a1d079e28|12075847|rds|vector|||7.25|Rows 272, 347 with NA values deleted.|
+GGEPlots|stem|f7c659221730be50|5656ab872a25bbad|845d7598b22a2719|749231338||t18872.853519593s|c24b7b2f427007d2|191813|rds|vector|||0.11||
+BLUP_Plots|stem|8f22ecc48c6aa2b3|f5524d2601a81a4f|c0efc04491b4efdb|-679939318||t18872.8535411323s|72e4e36bcef5f7d9|17160035|rds|vector|||0.56|position_stack requires nonoverlapping x intervals|
