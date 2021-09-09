@@ -40,25 +40,33 @@ tar_plan(
              merge_2021_data(OldData = BalancedData, NewData = Yield2021)), 
   
   # Make summary tables and plots for EDA
-  ExploratoryAnalysis = explore_BalancedData(Merged2021),
+  tar_target(ExploratoryAnalysis, 
+             explore_BalancedData(Merged2021)),
+  
   
   # Fit LMMs to the balanced data for the traits included in "TraitSelection"
-  MixedModels = fit_MixedModels(Merged2021, 
-                                TraitSelection = c("Yield", "Oil", "Protein")),
+  tar_target(MixedModels, 
+             fit_MixedModels(Merged2021, 
+                             TraitSelection = c("Yield", "Oil", "Protein"))),
   
   # GGE models
-  GGEModels = fit_GGEModels(Merged2021, TraitSelection = c("Yield")),
+  tar_target(GGEModels, 
+             fit_GGEModels(Merged2021, TraitSelection = c("Yield"))),
   
   # Plots derived from the gge model
-  GGEPlots = plot_GGEModels(GGEModels),
+  tar_target(GGEPlots, 
+             plot_GGEModels(GGEModels)),
   
   # Genotype by yield*trait plot
-  GYTModel = fit_GYTModel(Merged2021, TraitSelection = c("Protein", "Oil"), wt = c(1, 1), ideo = c('h', 'h')),
+  tar_target(GYTModel, 
+             fit_GYTModel(Merged2021, TraitSelection = c("Protein", "Oil"), wt = c(1, 1), ideo = c('h', 'h')),
   
   # General plots of the BLUPs
-  BLUP_Plots = plot_BLUPs(MixedModels),
-  
-  MTSI_Plots = calc_MTSI(Merged2021), 
+  tar_target(BLUP_Plots, 
+             plot_BLUPs(MixedModels)),
+
+  tar_target(MTSI_Plots, 
+             calc_MTSI(Merged2021)),
   
   # Merge the data from 2020
   tar_target(Yield2020,

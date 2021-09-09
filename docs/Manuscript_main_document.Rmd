@@ -1,0 +1,76 @@
+---
+title: Selection for Yield and Seed Composition Traits with Lines from a Recombinant
+  Inbred Line Population
+author: "Jay Gillenwater"
+date: "9/7/2021"
+output: 
+  word_document:
+    reference_docx: agronomy_journal_template.docx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Core ideas here.
+
+# Title
+
+Author list + affiliations
+Abbreviations (alphabetical order: Abbreviation, definition; next abbreviation, next definition; ...)
+
+CAS, Caswell research farm; CLA, central crops research station; PLY, Tidewater Research Station; SDWT, one hundred seed weight;
+
+# Abstract
+
+# Introduction
+
+- Importance of yield.
+- Importance of oil, protein coupled with oil. Stats on worldwide meal consumption, value contributed by high protein. 
+- Difficulty in simultaneously increasing yield, protein.
+- Need for diverse germplasm with high protein, yield, good agronomic qualities.
+
+# Materials and Methods
+## Pedigree
+
+- Brief details about the populations they were selected from
+  - Number of RILs in each population
+  - Population parents, parental pedigree (perhaps supplementary for detailed pedigrees)
+  
+## Population development
+
+- Criteria for selection from the starting RIL populations. 
+  - Two trials per RIL population.
+- How were lines selected for progression to the 2020 season.
+  - Two trials in total. 
+
+
+## Plot techniques
+
+- Plot techniques: How many rows, row lengh, spacing, seeding rate (from lead sheets)
+- How data was converted between three-row and four-row trials
+
+## Phenotypic data collection
+
+- List each relevant phenotype and how it was measured
+  - Yield, protein/oil, logding, agronomic score, seed weight.
+
+## Statistical analysis
+
+- Statistical model used to analyze data, fixed vs random effects what software was used. 
+  - Model used.
+  - ANOVA results for model term significance (mainly genotype).
+  - Software used to fit the model
+  - How were genotype means compared (LSD?)
+
+# Results and Discussion
+
+- Report agronomic performance of well performing lines. 
+  - Well performing lines are those with yield within a LSD of the check average.
+  - Report yield, maturity, lodging, heinght, seed weight, seed protein, seed oil, and meal protein. 
+    - Meal protein maybe from the SPROC program(?) **look into how to calculate this**
+    
+
+# Acknowledgements
+
+# References
