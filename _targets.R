@@ -33,6 +33,7 @@ tar_plan(
              Balance_YieldData(YieldData = YieldData$All_WithAg_ThreeReps)),
   
   # Simulate a dataset for the 2021 data
+  # REPLACE THE COMMAND IN THIS STEP ONCE WE HAVE THE ACTUAL 2021 DATA
   tar_target(Yield2021, 
              simulate_yield_2021(OldYield = BalancedData)),
   
@@ -40,6 +41,8 @@ tar_plan(
              merge_2021_data(OldData = BalancedData, NewData = Yield2021)), 
   
   # Make summary tables and plots for EDA
+  # TODO: Check for outliers, calculate and visualize correlation coefficients
+  # with both tables and coefficeint matrices
   tar_target(ExploratoryAnalysis, 
              explore_BalancedData(Merged2021)),
   
@@ -59,7 +62,7 @@ tar_plan(
   
   # Genotype by yield*trait plot
   tar_target(GYTModel, 
-             fit_GYTModel(Merged2021, TraitSelection = c("Protein", "Oil"), wt = c(1, 1), ideo = c('h', 'h')),
+             fit_GYTModel(Merged2021, TraitSelection = c("Protein", "Oil"), wt = c(1, 1), ideo = c('h', 'h'))),
   
   # General plots of the BLUPs
   tar_target(BLUP_Plots, 
@@ -67,6 +70,10 @@ tar_plan(
 
   tar_target(MTSI_Plots, 
              calc_MTSI(Merged2021)),
+  
+  # Within environment and joint ANOVA
+  tar_target(ANOVA_tables, 
+             make_anova_tables(FullData = Merged2021)),
   
   # Merge the data from 2020
   tar_target(Yield2020,

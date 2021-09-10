@@ -14,7 +14,7 @@ explore_BalancedData <- function(BalancedData) {
     kable_styling(full_width = F, position = "left")
     
   
-  # WHich genotype had the highest score for each phenotype in each environment
+  # Which genotype had the highest score for each phenotype in each environment
   GenoWinners <- BalancedData %>%
     ge_winners(ENV, GEN, resp = everything()) %>%
     gt() %>%

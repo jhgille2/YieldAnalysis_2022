@@ -26,7 +26,9 @@ pacman::p_load(conflicted,
                hrbrthemes, 
                emmeans, 
                metan, 
-               bookdown)
+               bookdown, 
+               officer, 
+               officedown)
 
 
 
