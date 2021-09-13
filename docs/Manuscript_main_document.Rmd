@@ -18,11 +18,9 @@ Core ideas here.
 
 Author list + affiliations
 
-
-
 Abbreviations (alphabetical order: Abbreviation, definition; next abbreviation, next definition; ...)
 
-CAS, Caswell research farm; CLA, central crops research station; PLY, Tidewater Research Station; Pop 201, oil mapping population 201; Pop 202, oil mapping population 202; RIL, recombinant inbred line; SDWT, one hundred seed weight; SSD, single seed descent;
+CAS, Caswell research farm; CLA, central crops research station; PLY, Tidewater Research Station; Pop 201, oil mapping population 201; Pop 202, oil mapping population 202; RCBD, randomized complete block design; RIL, recombinant inbred line; SDWT, one hundred seed weight; SSD, single seed descent;
 
 # Abstract
 
@@ -33,6 +31,10 @@ CAS, Caswell research farm; CLA, central crops research station; PLY, Tidewater 
 - Difficulty in simultaneously increasing yield, protein.
 - Need for diverse germplasm with high protein, yield, good agronomic qualities.
 
+Soybean is among the most valuable crops in the current national and international markets. Chief among it's uses are for the production of vegetable oils, and protein meal for animal feed. In 2021, 70% of worldwide protein meal consumption and 59% of worldwide oilseed production came from soybean. While these seed composition traits contribute value to the crop, overall seed yield is of primary importance. As such, improving these seed composition traits without compromising seed yield is of great importance to breeders and farmers alike. Historically the task of improving these three traits simultaneously has been difficult due to inverse correlations which exist between seed protein and seed yield, and between seed oil and seed protein compositions[@RN1843]. These inverse correlations are thought to arise from competing metabolic pathways which control the traits[@RN1264].
+
+While difficult, it is possible to improve all three of these traits simultaneously through conventional breeding techniques as evidenced by the recent release of several cultivars with improved seed composition traits, and with yield comparable to, or superior to that of existing check cultivars[@RN1809; @RN1249; @RN1811]. As such, it is important that breeders take every opportunity to both better understand the relationship between these traits, and identify new cultivars that have improved seed composition traits without sacrificing yield. 
+
 # Materials and Methods
 
 ## Phenotypic data collection
@@ -42,14 +44,19 @@ CAS, Caswell research farm; CLA, central crops research station; PLY, Tidewater 
   Lines used in this study were selected from two F~5~-derived recombinant inbred line populations that were segregating for seed protein and seed oil contents, denoted as populations 201 and 202 (Pop 201 and Pop 202). The first population, population 201 consisted of 273 recombinant inbred lines (RILs) derived from a cross between the high protein breeding line LMN09-119 and the high oil breeding line N09-09 in 2015. Population 202 consisted of 197 RILs derived from a cross between the high protein breeding line LMN09-19 and the high oil breeding line N13-47, also made in 2015. RILs were advanced to the F~5~ generation by single seed descent (SSD) at which point a single plant was harvested to represent each F~5~ derived RIL.
   
 ## Population development
-  In 2019, 80 RILs with the highest bulk weight, seed protein, and seed oil content with non-extreme maturity dates were selected from Pop 201 and Pop 202. The selections were used to make two yield trials per population, named Test 1 - Test 4 where Test 1 and Test 2 consisted of RILs from Pop 201 and tests 3 and 4 consisted of RILs from Pop 202. Yield check cultivars Osage[@RN1744], Dunphy**find citation**, and Roy[@RN1743] were used in tests 1 and 2 while Dunphy**find citation**, Dilday **find citation**, and Raleigh[@RN1742] were used for tests 3 and 4.  Check cultivars were selected for each test to match the maturity date range of the RILs of each test. Following the collection of phenotypic data in the 2019 growing season, a subset of the lines was identified which exhibited yield comparable to the check cultivars, and also high seed protein, high seed oil, or a combination of high seed oil and seed protein content. In total, 30 genotypes were selected which met this criteria and were organized into two new yield trials, each consisting of 15 RILs with similar maturity dates. The Dunphy, Dilday, and Raleigh check cultivars were included in test 1 while the Osage, Ellis, and Dunphy check cultivars were used in test 2.
+  In 2019, 80 RILs with the highest bulk weight, seed protein, and seed oil content with non-extreme maturity dates were selected from Pop 201 and Pop 202. The selections were used to make two yield trials per population, named Test 1 - Test 4 where Test 1 and Test 2 consisted of RILs from Pop 201 and tests 3 and 4 consisted of RILs from Pop 202. Yield check cultivars Osage[@RN1744], Dunphy**find citation**, and Roy[@RN1743] were used in tests 1 and 2 while Dunphy**find citation**, Dilday **find citation**, and Raleigh[@RN1742] were used for tests 3 and 4.  Check cultivars were selected for each test to match the maturity date range of the RILs of each test. Following the collection of phenotypic data in the 2019 growing season, a subset of the lines was identified which exhibited yield comparable to the check cultivars, and also high seed protein, high seed oil, or a combination of high seed oil and seed protein content. In total, 30 genotypes were selected which met this criteria and were organized into two new yield trials, each consisting of 15 RILs with similar maturity dates. The Dunphy, Dilday, and Raleigh check cultivars were included in test 1 while the Osage, Ellis, and Dunphy check cultivars were used in test 2. These two trials were grown and evaluated in two locations in both the 2020 and 2021 growing seasons. 
 
 
 ## Plot techniques
 
 - Plot techniques: How many rows, row length, spacing, seeding rate (from lead sheets)
-- How data was converted between three-row and four-row trials
+- How data was converted between three-row and four-row trials.
 
+In 2019, each test was grown at the Tidewater Research Station in Plymouth, NC (PLY), and the Caswell Research farm in Kinston, NC (CAS). RILs were grown in a randomized complete block design (RCBD) with three replications at each location. The yield plots consisted of three rows on 96.5 cm row spacing with 6.7 m row length. The plots were end trimmed to 4.57 m prior to harvesting at or near maturity. Seeds were planted at a density of approximately 31 seeds per meter in these plots. 
+
+In 2020, each test was grow in CAS and the Central Crops Research Station in Clayton, NC (CLA). RILs were grown in a RCBD with four replications at each location. Plot techniques and dimensions were otherwise identical to those employed in 2019. 
+
+In 2021, each test was grown in the CAS and PLY locations. RILs were grown in a RCBD with four replications at each location. Yield plots consisted of four rows with a 96.5 cm row spacing with 5.5 m row length. The plots were end trimmed t0 3.05 m prior to harvesting at or near maturity.  Best management practices were used throughout all growing seasons.
 
 
 ## Statistical analysis
@@ -59,6 +66,10 @@ CAS, Caswell research farm; CLA, central crops research station; PLY, Tidewater 
   - ANOVA results for model term significance (mainly genotype) both within environment and in all environments.
   - Software used to fit the model
   - How were genotype means compared (LSD?)
+  
+  The following statistical model was used to analyze the data. 
+  $$y_{ijk} = \mu + L_i + B(L)_{ij} + G_k + GL_{ik} + \epsilon_{ijk}$$
+  Where $\mu$ is the overall mean, $L_i$ is the effect of location $i$, $B(L)_{ij}$ is the effect of replication $j$ nested within location $i$, $G_k$ is the effect of genotype $k$, $GL_{ik}$ is the effect of the interaction between genotype $k$ and location $i$. Genotype is assumed to be a fixed effect and all other effects are assumed as random. 
 
 # Results and Discussion
 
